@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  aggregator:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - aggregator_data:/app/data
+
+volumes:
+  aggregator_data:
